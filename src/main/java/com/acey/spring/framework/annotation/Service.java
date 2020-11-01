@@ -1,11 +1,11 @@
-package com.acey.spring.annotation;
+package com.acey.spring.framework.annotation;
 
 import java.lang.annotation.*;
 
-@Target({ElementType.FIELD})
+@Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Autowired {
+public @interface Service {
 
     String value() default "";
 }

@@ -1,11 +1,11 @@
-package com.acey.spring.annotation;
+package com.acey.spring.framework.annotation;
 
 import java.lang.annotation.*;
 
-@Target({ElementType.TYPE})
+@Target({ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
-public @interface Service {
+public @interface RequestParam {
 
     String value() default "";
 }
